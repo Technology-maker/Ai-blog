@@ -18,6 +18,9 @@ app.use(cors({
 }))
 
 app.use('/api', Router);
+app.use("/", (req, res) => {
+  res.send("Backend Was Running !")
+})
 
 
 app.listen(port, () => {
