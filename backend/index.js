@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use(cors({
-  origin: ["", "http://localhost:5173"],   // your React app URL
+  origin: ["", "https://aiblogs-six.vercel.app", "http://localhost:5173"],   // your React app URL
   methods: ["GET", "POST"],
   credentials: true
 }))
