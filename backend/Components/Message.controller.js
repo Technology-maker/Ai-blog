@@ -10,7 +10,7 @@ const MessageController = async (req, res) => {
             success: false,
             message: "All fields are required!",
         });
-    }
+    } 
 
     try {
         const transporter = nodemailer.createTransport({
